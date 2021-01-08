@@ -3,7 +3,7 @@ package middlew
 import (
 	"net/http"
 
-	"github.com/vincentconace/twittor/bd"
+	"github.com/vincentconace/twitter/bd"
 )
 
 //ChequeoBD es el middlew que me permite saber el estado de la base de datos

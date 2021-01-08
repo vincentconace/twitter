@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/vincentconace/twittor/models"
+	"github.com/vincentconace/twitter/models"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

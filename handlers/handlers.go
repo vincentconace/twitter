@@ -7,8 +7,8 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
-	"github.com/vincentconace/twittor/middlew"
-	"github.com/vincentconace/twittor/routers"
+	"github.com/vincentconace/twitter/middlew"
+	"github.com/vincentconace/twitter/routers"
 )
 
 //Handlers seteo mi puerto y escucha el servidor

@@ -1,4 +1,4 @@
-module github.com/vincentconace/twittor
+module github.com/vincentconace/twitter
 
 go 1.13
 
