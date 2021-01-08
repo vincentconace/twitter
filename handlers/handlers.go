@@ -15,6 +15,7 @@ import (
 func Handlers() {
 	router := mux.NewRouter()
 
+	//funcion crea la ruta para realizar el registro
 	router.HandleFunc("/registro", middlew.ChequeoBD(routers.Registro)).Methods("POST")
 
 	PORT := os.Getenv("PORT")

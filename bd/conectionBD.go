@@ -14,8 +14,11 @@ import (
 
 //MongoCN es el objeto que conecta a la base de datos
 var MongoCN = ConnectBD()
+
+//URI para conecta a la base de datos
 var clientOptions = options.Client().ApplyURI("mongodb+srv://vincent:v-21032991@twittor.8yvhb.mongodb.net/twittor?retryWrites=true&w=majority")
 
+//ConnectBD esta funcion nos conecta con la base de datos
 func ConnectBD() *mongo.Client {
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 	if err != nil {
