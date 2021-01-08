@@ -15,7 +15,7 @@ func ChequeoYaExisteUsuario(email string) (models.Usuario, bool, string) {
 	defer cancel()
 
 	//se asigna a la variable db la base de datos "twittor"
-	db := MongoCN.Database("twittor")
+	db := MongoCN.Database("twitter")
 	//se asigna a al varaible col la coleccion de la base de datos
 	col := db.Collection("usuarios")
 

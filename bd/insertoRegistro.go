@@ -12,8 +12,8 @@ import (
 func InsertoRegistro(u models.Usuario) (string, bool, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
- //asignando variables para la base de datos y la coleccion
-	db := MongoCN.Database("twittor")
+	//asignando variables para la base de datos y la coleccion
+	db := MongoCN.Database("twitter")
 	col := db.Collection("usuarios")
 
 	u.Password, _ = EncriptarPassword(u.Password)
