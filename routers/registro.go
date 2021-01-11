@@ -23,7 +23,7 @@ func Registro(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if len(t.Password) < 6 {
-		http.Error(w, "Debe especificar una contraceña de almenos 56 caracteres", 400)
+		http.Error(w, "Debe especificar una contraceña de almenos 6 caracteres", 400)
 		return
 	}
 
