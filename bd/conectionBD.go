@@ -30,10 +30,11 @@ func ConnectBD() *mongo.Client {
 		log.Fatal(err.Error())
 		return client
 	}
-	log.Println("Conections DB")
+	log.Println("Coneccion exitosa con la BD")
 	return client
 }
 
+//Chequeoconection es el ping a la BD
 func ChequeoConection() int {
 	err := MongoCN.Ping(context.TODO(), nil)
 	if err != nil {
